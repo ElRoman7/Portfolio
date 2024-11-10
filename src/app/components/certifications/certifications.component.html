@@ -1,0 +1,23 @@
+<!-- component -->
+<div class="flex justify-center">
+  <h3 class="mt-8 text-3xl font-bold text-blue-600">Cursos y Certificaciones</h3>
+</div>
+
+<section class="container mx-auto my-8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+    @for(certification of certifications; track $index){
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden max-w-md w-full">
+      <a [href]="certification.link" target="_blank" rel="noopener noreferrer">
+        <img [src]="certification.img" [alt]="certification.name" class="w-full h-40 object-contain">
+      </a>
+
+      <div class="p-6">
+        <h1 class="text-gray-900 font-bold text-xl">{{ certification.name }}</h1>
+        <p class="mt-2 text-gray-600">{{ certification.type }}</p>
+        <p class="mt-2 text-gray-600">{{ certification.platform }}</p>
+        <p class="mt-2 text-gray-600">{{ certification.date }}</p>
+      </div>
+    </div>
+  }
+  </div>
+</section>

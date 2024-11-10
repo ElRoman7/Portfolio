@@ -1,17 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Injectable } from '@angular/core';
 import Swal from 'sweetalert2';
-import { AppService } from '../../services/app.service';
 
-@Component({
-  selector: 'app-contacto',
-  standalone: true,
-  imports: [],
-  templateUrl: './contacto.component.html',
-  styleUrl: './contacto.component.css'
+@Injectable({
+  providedIn: 'root'
 })
-export class ContactoComponent {
-  appService = inject(AppService);
-  email = 'sergio.romam@outlook.com';
+export class AppService {
+  constructor() { }
 
   openPdfDialog(): void {
     Swal.fire({
@@ -33,4 +27,5 @@ export class ContactoComponent {
       }
     });
   }
+
 }
