@@ -24,7 +24,7 @@ export class ProyectosComponent {
   },
   {
     title: 'Guitar-LA',
-    description: 'Proyecto FrontEnd de una tienda de guitarras con carrito de compras utilizando Local Storage, proyecto hecho con React utilizando TS',
+    description: 'Proyecto FrontEnd de una tienda de guitarras con carrito de compras utilizando Local Storage, proyecto hecho con React utilizando TS.',
     img: 'assets/img/guitar-la.png',
     link: 'http://guitar-la.sromandev.click'
   },
