@@ -33,6 +33,12 @@ export class ProyectosComponent {
     description: "API para un proyecto E-Commerce completo con autenticación de usuarios, administración de productos, subida de imágenes, paginación, roles de usuario, generación de tokens JWT, y documentación de API con Swagger. Implementado con NestJS y PostgreSQL.",
     img: "assets/img/teslo-shop.png",
     link: "https://teslo-shop.sromandev.click/api"
+  },
+  {
+    title: "Lavorum",
+    description: "Proyecto con arquitectura desacoplada (Frontend y Backend separados), desarrollado con NestJS y PostgreSQL en el backend, React en el frontend, e integración de modelos de aprendizaje automático con TensorFlow.js. Plataforma tipo bolsa de trabajo que permite la gestión de vacantes, perfiles de candidatos y análisis inteligente de coincidencias.",
+    img: "assets/img/lavorum.png",
+    link: "https://lavorum.sromandev.click"
   }
   ];
 }

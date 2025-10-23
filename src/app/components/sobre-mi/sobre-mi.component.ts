@@ -2,11 +2,13 @@ import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import Swal from 'sweetalert2';
 import { AppService } from '../../services/app.service';
+import { ScrollService } from '../../services/scroll.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-sobre-mi',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './sobre-mi.component.html',
   styleUrls: ['./sobre-mi.component.css']
 })
@@ -23,4 +25,7 @@ export class SobreMiComponent {
     'assets/img/php.png',
     'assets/img/laravel.png'
   ];
+  isMenuOpen = false;
+
+
 }
